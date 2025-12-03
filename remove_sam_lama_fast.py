@@ -1,7 +1,3 @@
-# remove_sticker_yolo_sam_fast.py
-# YOLO (box) -> SAM (precise mask, now on downscaled copy) -> upsample -> LaMa inpaint (combined mask + ROI crop)
-# pip install simple-lama-inpainting
-
 import os, sys, cv2, numpy as np, torch, shutil
 from ultralytics import YOLO
 from segment_anything import SamPredictor, sam_model_registry
